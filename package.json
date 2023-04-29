@@ -1,0 +1,16 @@
+{
+  "name": "react-native-kindle",
+  "version": "1.0.4",
+  "description": "",
+  "main": "react-native.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "17.0.2",
+    "react-native": "0.65.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
