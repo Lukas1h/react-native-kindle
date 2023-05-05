@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {Image,Touchable} from '.'
-import {CloseApp} from '.';
+import { CloseApp } from "./System.js";
 
-export default function Header(){
+export default function Header({title}){
 	return (
     <>
       <View style={styles.statusBar}></View>
@@ -17,9 +17,10 @@ export default function Header(){
             paddingHorizontal: 36,
             paddingVertical: 14,
           }}>
-          <Text style={styles.headerText}>Settings</Text>
+          <Text style={styles.headerText}>{title}</Text>
           <Touchable
             onPress={() => {
+              console.log("closing.")
               CloseApp();
             }}
           >
