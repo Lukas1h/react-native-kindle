@@ -1,0 +1,48 @@
+# React Native Kindle
+
+`React Native Kindle` is a library that enables developers to run React Native applications on Kindle e-readers.
+
+Similer to [react-native-web](), it replaces some `react-native` components with Kindle platform-specific counterparts.
+
+Additionally, it includes some utilities like `CloseApp` and `ShowDialog`.
+
+It's meant to be used with [KPPLauncher](https://github.com/lukas1h/KPPLauncher), a MRPI package that allows `react-native-kindle` apps to be ran directly from the library, similer to the now unsuportted `kindlets`.
+
+## Compatibility
+TL;DR `v5.13.7` or later
+
+Since `React Native Kindle` is build on the new `KPP` framework included in the recent UI update, it should work on any devices running `v5.13.7` or later. It might be possible to run it on older devices (eg. `v5.12.x`) by copying the `/app` folder from the `v5.13.7` update.
+
+Hardware wise, it has only been tested on a PW3, but theres no reason it shouldn't run on devices that meet the software requierments.
+
+## Usage and Installation
+
+### Building
+```
+$ git clone https://github.com/lukas1h/react-native-kindle-sample/
+$ cd react-native-kindle-sample/
+$ npm i 
+$ npm run build
+```
+
+### Running
+If you have [KPPLauncher](https://github.com/lukas1h/KPPLauncher) installed (you really should):
+- Copy `./build/SampleApp.app` to your `documents` directory on your kindle.
+- Run `SampleApp` from your library.
+
+Otherwise:
+- Copy `./build/SampleApp.app` to anywhere on your kindle.
+- Run `/app/bin/KPPSimpleLauncher -h /app/tools -n DemoApp -s -j /path/to/your/build.app`
+
+## Goals
+This library aims to impliment those features that the `KPP` framework doesn't 
+support.
+
+This includes:
+- [x] Touchable components (Button, Pressable, TouchableOpacity,...)
+- [x] Images
+
+
+
+## Documentation
+Coming soon, I hope. In the meantime, dig through the source and check out [react-native-kindle-sampleapp](https://github.com/lukas1h/react-native-kindle-sample/). 
