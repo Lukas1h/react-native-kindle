@@ -3,30 +3,34 @@ import {View, Text, StyleSheet} from 'react-native';
 import {Image,Touchable} from '.'
 import { CloseApp } from "./System.js";
 
-export default function Header({title}){
-	return (
+export default function Header({ title, headerButtonRight }) {
+  return (
     <>
       <View style={styles.statusBar}></View>
       <View style={styles.header}>
         <View
           style={{
             flex: 1,
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            flexDirection: 'row',
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            flexDirection: "row",
             paddingHorizontal: 36,
             paddingVertical: 14,
-          }}>
+          }}
+        >
+          {typeof headerButton != null ? headerButtonRight : <></>}
           <Text style={styles.headerText}>{title}</Text>
           <Touchable
             onPress={() => {
-              console.log("closing.")
+              console.log("closing.");
               CloseApp();
             }}
           >
             <Image
-              style={{width: 27, height: 27}}
-              source={{uri: 'file:///app/KPPMainApp/res/KPPUIChrome/Close.svg'}}
+              style={{ width: 27, height: 27 }}
+              source={{
+                uri: "file:///app/KPPMainApp/res/KPPUIChrome/Close.svg",
+              }}
             />
           </Touchable>
         </View>
