@@ -2,6 +2,7 @@
 
 export { default as Touchable } from './Touchable.js';
 export { default as Navigation } from "./Navigation.js";
+export { default as ScrollView } from "./ScrollView.js";
 export { default as Button } from './Button.js';
 export { default as Header} from './Header.js';
 export { default as Image} from './Image.js';
