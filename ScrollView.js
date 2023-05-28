@@ -6,7 +6,7 @@ const KPPScrollView = requireNativeComponent("KPPPaginatedScrollView");
 
 export default function ScrollView(props){
     return React.cloneElement(
-      ScrollView,
+      KPPScrollView,
       Object.assign(
         {},
         {
