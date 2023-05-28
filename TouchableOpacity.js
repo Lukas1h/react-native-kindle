@@ -27,8 +27,8 @@ const TouchableOpacity = ({ onPress, children, style }) => {
     <>
       <Touchable
         onPress={() => {
-          onPress();
           handleFlash();
+          onPress();
         }}
         style={[
           {
