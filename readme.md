@@ -48,8 +48,7 @@ This includes:
 - [ ] And more
 
 ## Documentation
-Coming soon, I hope. In the meantime, dig through the source and check out [react-native-kindle-sampleapp](https://github.com/lukas1h/react-native-kindle-sample/). 
-
+Coming soon, I hope. In the meantime, dig through the source and check out [react-native-kindle-sampleapp](https://github.com/lukas1h/react-native-kindle-sampleapp/). 
 
 ## Contributing
 I don't know, just submit a PR.
